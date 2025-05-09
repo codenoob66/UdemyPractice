@@ -29,14 +29,25 @@ But it must have the following features:
   </head>
   <style>
     h1 {
+      font-size: 3rem;
       font-family: Baskervile;
       color: white;
     }
 
+    p {
+      color: white;
+    }
+
     body {
-      text-align: center;
       align-items: center;
       background-color: black;
+    }
+
+    .main-container {
+      width: 50%;
+      margin-left: 25%;
+      margin-top: 5%;
+      text-align: center;
     }
 
     img {
@@ -44,7 +55,10 @@ But it must have the following features:
     }
   </style>
   <body>
-    <h1>That special moment</h1>
-    <img src="./assets/images/daenerys.jpeg" alt="" />
+    <div class="main-container">
+      <img src="./assets/images/daenerys.jpeg" alt="" />
+      <h1>That special moment</h1>
+      <p>that you find the perfect avocado in the supper market</p>
+    </div>
   </body>
 </html>

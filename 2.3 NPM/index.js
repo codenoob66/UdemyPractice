@@ -1,9 +1,7 @@
 // import { randomSuperHero} from "superHeroes"
 // const name = randomSuperHero()
 
-import generateName from "sillyname"
-
-const sillyName = generateName();
+import superheroes from 'superheroes';
 
 
-console.log(sillyName)
+console.log(superheroes)    

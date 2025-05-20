@@ -1,5 +1,4 @@
 const { error } = require("console")
-const fs = require("fs")
 
 fs.writeFile("message.txt", "hello from the otherside", (error) => {
     if(error) throw error;

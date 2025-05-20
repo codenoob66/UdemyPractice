@@ -5,9 +5,28 @@
 */
 
 import inquirer from "inquirer";
+import fs from "fs"
+import qr from "qr-image"
 
 
-fs.writeFile("URL.txt", `${takeUserInput()}`, (error) => {
+// inquirer
+//   .prompt([
+//     /* Pass your questions in here */
+//   ])
+//   .then((answers) => {
+//     // Use user feedback for... whatever!!
+//   })
+//   .catch((error) => {
+//     if (error.isTtyError) {
+//       // Prompt couldn't be rendered in the current environment
+//     } else {
+//       // Something else went wrong
+//     }
+//   });
+ 
+const qr_svg = qr.image('I love QR!', { type: 'svg' });
+
+fs.writeFile("URL.txt", `${qr_svg}`, (error) => {
     if(error) throw error;
     console.log("file has been saved")
 })

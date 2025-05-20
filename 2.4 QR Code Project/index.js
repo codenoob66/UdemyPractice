@@ -3,7 +3,6 @@
 import inquirer from "inquirer";
 import fs from "fs";
 import qr from "qr-image";
-import { error } from "console";
 
 inquirer
   .prompt([

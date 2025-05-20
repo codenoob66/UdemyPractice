@@ -12,9 +12,6 @@ player1Image.setAttribute("src", `images/dice${player1}.png`);
 
 player2Image.setAttribute("src", `images/dice${player2}.png`);
 
-console.log(player1);
-console.log(player2);
-
 if (player1 > player2) {
   document.querySelector("h1").innerHTML = "Player 1 Wins!";
 } else if (player1 < player2) {

@@ -1,10 +1,24 @@
-const player1Image = document.getElementsByClassName("img1");
-const player2Image = document.getElementsByClassName("img2");
+const player1Image = document.getElementById("img1");
+const player2Image = document.getElementById("img2");
 
-let randomNumber1 = Math.floor(Math.random() * 6) + 1;
+function randomNumber() {
+  return Math.floor(Math.random() * 6) + 1;
+}
 
-function displayWinner() {
-  const winnerTxt = document.getElementById("h1text");
+let player1 = randomNumber();
+let player2 = randomNumber();
 
-  winnerTxt.innerHTML = "";
+player1Image.setAttribute("src", `images/dice${player1}.png`);
+
+player2Image.setAttribute("src", `images/dice${player2}.png`);
+
+console.log(player1);
+console.log(player2);
+
+if (player1 > player2) {
+  document.querySelector("h1").innerHTML = "Player 1 Wins!";
+} else if (player1 < player2) {
+  document.querySelector("h1").innerHTML = "Player 2 Wins!";
+} else {
+  document.querySelector("h1").innerHTML = "Draw!";
 }

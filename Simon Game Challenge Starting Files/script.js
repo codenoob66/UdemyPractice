@@ -3,7 +3,6 @@ const blueBtn = document.getElementById("blue")
 const greenBtn = document.getElementById("green")
 const yellowBtn = document.getElementById("yellow")
 
-
-function blink() {
-
+function randomBlink() {
+    
 }

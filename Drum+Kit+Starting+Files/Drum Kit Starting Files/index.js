@@ -81,5 +81,29 @@ for (let i = 0; i < numberOfDrumButtons; i++) {
   });
 }
 
+document.addEventListener("keydown", function(event) {
+  const audio = {
+  w: "sounds/tom-1.mp3",
+  a: "sounds/tom-2.mp3",
+  s: "sounds/tom-3.mp3",
+  d: "sounds/tom-4.mp3",
+  j: "sounds/snare.mp3",
+  k: "sounds/crash.mp3",
+  l: "sounds/kick-bass.mp3",
+};
+
+const key = event.key.toLowerCase();
+    if (audio[key]) {
+      const sound = new Audio(audio[key]);
+      sound.play();
+    }
+
+})
+
+if(key === "w") {
+  const sound = new Audio("sounds/tom-1.mp3")
+  sound.play()
+}
+
 
 

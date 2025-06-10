@@ -1,5 +1,11 @@
-const h1 = document.querySelector("li");
+const h1 = document.querySelector("h1");
+const btn = document.querySelector("button");
 
-console.log(h1);
+const list = document.querySelectorAll("li");
 
-h1.classList.add("huge");
+btn.addEventListener("click", () => {
+  h1.classList.toggle("huge");
+  list.forEach((item) => {
+    item.classList.toggle("huge");
+  });
+});

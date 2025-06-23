@@ -18,7 +18,6 @@ function nextSequence() {
     console.log(gamePattern) 
 }
 
-nextSequence();
 
 $(".btn").click(function() {
   let userChosenColour = $(this).attr("id")
@@ -63,7 +62,7 @@ function checkAnswer(currentLevel) {
   } else {
     playSound("wrong");
     $("body").addClass("game-over");
-    $("#level-title").text("Game Over, Press Any Key to Restart");
+    $("h1").text("Game Over, Press Any Key to Restart");
     setTimeout(function() {
       $("body").removeClass("game-over");
     }, 200);

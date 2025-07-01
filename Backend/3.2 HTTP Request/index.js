@@ -9,3 +9,11 @@ app.listen(port, () => {
 app.get('/', (req,res) => {
     res.send("hey why are you here?")
 })
+
+app.get('/about', (req, res) => {
+  res.send("you have arrived at the about page")
+})
+
+app.get('/contact', (req, res) => {
+  res.send("you have arrived at the contact page")
+})

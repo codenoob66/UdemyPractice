@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 // Custom middleware for POST
 function userDetails(req, res, next) {
   console.log("Form data:", req.body);
-  bandName = req.body.name + req.body.age; // use lowercase to match input name
+  bandName = req.body["street"] + req.body["pet"]; // use lowercase to match input name
   next();
 }
 
